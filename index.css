@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    background-color: #e7eafd;
+    padding: 2rem;
+
+    @media screen and (max-width: 767px) {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .a-i {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            width: 200px;
+            height: 60px;
+        }
+
+
+
+        nav {
+            display: flex;
+            gap: 2rem;
+
+            @media screen and (min-width: 0px) and (max-width: 767px) {
+
+                display: none;
+
+            }
+
+
+            a {
+                text-decoration: none;
+                color: #111111;
+                font-family: "Roboto", sans-serif;
+                font-size: 1.125rem;
+                font-weight: 500;
+            }
+
+            .a1 {
+                color: #243be6;
+            }
+
+
+            i {
+                font-size: 1.5rem;
+                cursor: pointer;
+            }
+        }
+
+
+
+        #menu {
+            display: none;
+            font-size: 1.5rem;
+            color: #243be6;
+
+            @media screen and (max-width: 767px) {
+                padding: 1rem;
+                margin-right: 5px;
+                display: block;
+
+            }
+        }
+
+
+
+
+    }
+}
+
+
+
+
+
+.hero {
+    width: 100%;
+    padding: 7rem 3rem 3rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 5rem;
+    background-color: #e7eafd;
+
+    @media screen and (min-width: 0px) and (max-width: 767px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    h1 {
+        font-size: 3.7rem;
+        font-weight: 700;
+        text-align: left;
+        font-family: 'Plus Jakarta Sans';
+        color: #111111;
+        order: 1;
+
+        @media screen and (max-width: 767px) {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+    }
+
+
+
+    p {
+        width: 40%;
+        font-size: 1.5rem;
+        line-height: 1.6;
+        text-align: left;
+        font-family: 'DM Sans';
+        color: #111111;
+        order: 2;
+
+        @media screen and (max-width: 767px) {
+            font-size: 20px;
+            font-weight: 400;
+            width: 100%;
+        }
+    }
+
+
+}
