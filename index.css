@@ -49,6 +49,10 @@ header {
                 font-weight: 500;
             }
 
+            a:hover {
+                color: #243be6;
+            }
+
             .a1 {
                 color: #243be6;
             }
@@ -133,4 +137,218 @@ header {
     }
 
 
+}
+
+
+section {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+
+    @media screen and (max-width: 767px) {
+        width: 100%;
+    }
+
+
+    .icon {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        padding: 2rem;
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+
+
+        .one,
+        .two,
+        .three {
+            width: 35%;
+            height: 280px;
+            background-color: #f2f2f2;
+            border-radius: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 1rem;
+            padding-top: 2rem;
+
+            @media screen and (max-width: 767px) {
+                width: 100%;
+
+            }
+
+
+
+            div {
+                width: 5rem;
+                height: 5rem;
+                background-color: #243be6;
+                border-radius: 50%;
+                text-align: center;
+                padding-top: 15px;
+
+                i {
+                    color: #ffffff;
+                    font-size: 3rem;
+                }
+
+            }
+
+            p {
+                font-size: clamp(10px, 20px 1.7rem);
+                line-height: 1.2;
+                font-weight: 700;
+                font-family: "Roboto", sans-serif;
+                text-align: center;
+                color: #111111;
+            }
+
+            .pi {
+                font-family: 'Plus Jakarta Sans';
+                font-size: clamp(10px, 20px 27px);
+                /* font-size: 27px; */
+                line-height: 1.2;
+                font-weight: 350;
+            }
+
+            a {
+                color: #243be6;
+                font-size: clamp(10px, 20px 1.3rem);
+                /* font-size: 1.3rem; */
+                font-weight: 700;
+                text-decoration: none;
+                font-family: 'Plus Jakarta Sans';
+
+            }
+
+        }
+    }
+}
+
+.ma-fo {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+
+
+    .map {
+
+        iframe {
+            width: 680px;
+            height: 670px;
+            padding-left: 1rem;
+
+        }
+    }
+}
+
+
+form {
+    width: 50%;
+    max-width: 100%;
+    padding: 1.5rem;
+
+    h2 {
+        font-size: 2rem;
+        line-height: 1;
+        font-weight: 700;
+        color: #111111;
+        text-align: center;
+        font-family: 'Plus Jakarta Sans';
+        padding-bottom: 1rem;
+
+    }
+
+    p {
+        font-size: clamp(10px, 20px 1rem);
+        font-weight: 700;
+        line-height: 1.4;
+        text-align: center;
+        color: #111111;
+        font-family: 'DM Sans';
+    }
+
+    .form {
+
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .a1,
+        .a2,
+        .a3 {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+
+        label {
+            font-size: clamp(10px, 20px 1.3rem);
+            text-align: start;
+            font-family: 'DM Sans';
+        }
+
+        input {
+
+            padding: 1rem;
+            border: 0px;
+            border-bottom: #808080 3px solid;
+        }
+
+        ::-webkit-input-placeholder {
+            font-family: 'DM Sans';
+            font-size: clamp(10px, 20px 1.3rem);
+            font-weight: 400;
+        }
+
+        textarea {
+            height: 126px;
+            padding: 1rem;
+            border: 0px;
+            border-bottom: #808080 3px solid;
+        }
+
+    }
+
+    .check {
+        display: flex;
+        gap: 10px;
+        padding-bottom: 1rem;
+
+        p {
+            font-family: 'DM Sans';
+
+        }
+
+        a {
+            text-decoration: none;
+            color: #243be6;
+            font-family: 'DM Sans';
+            font-size: clamp(10px, 20px 1rem);
+        }
+    }
+
+    button {
+        padding: 1.3rem 16rem;
+        margin-left: 2rem;
+        border: 0px;
+        border-radius: 1rem;
+        background-color: #243be6;
+        font-size: clamp(10px, 20px 1rem);
+        font-weight: 400;
+        color: #ffffff;
+        font-family: 'DM Sans';
+    }
+
+    button:hover {
+        background-color: #111111;
+    }
 }
